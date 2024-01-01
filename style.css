@@ -13,3 +13,24 @@ main {
     margin: auto;
     box-shadow: 3pc 3px 5px rgba(0, 0, 0, .5);
 }
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.text {
+color: white;
+font-family: Arial, sans-serif;
+font-weight: bold;
+font-size: 50px;
+overflow: hidden;
+white-space: nowrap;
+margin: 0 auto;
+border-right: 2px solid white;
+animation: typing 5s steps(4, end), blink 0.5s step-end infinite;
+}
