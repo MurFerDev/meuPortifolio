@@ -1,66 +1,107 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px; color: #0D0D0D;
-}
+    font-size: 20px; color: #0D0D0D;
+ }
 
 body {
     background-color: #0D0D0D;
 }
 
-heading {
-    background-color: #0D0D0D;
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100vw;
+}
+
+.logo img {
+    flex: 1 1 auto;
+    height: 80px;
+    border-radius: 50%;
+    justify-content: left;
+    order: 1;
+    display: inline-block;
+}
+
+.navbar {
+    flex: 1 1 auto;
+    width: 100vw;
+    justify-items: flex-start;
+    align-content: center;
+    background-color: #D9D9D9;
+    text-align: center;
+    text-decoration: none;
+    order: 2;
+}
+
+.navbar a {
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 main {
-    background-color: #D9D9D9;
-    width: 1000px;
+    background-color: #0D0D0D;
+    width: auto;
     margin: auto;
 }
 
+.container {
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-content:center;
+    align-items: center;
+    height: 400px;
+    width: 80%;
+    background-color: #D9D9D9;
+}
+
+.about {
+    flex: 1 1 auto;
+    height: 400px;
+    width: 600px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+.profile-pic {
+    flex: 1 1 auto;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+.formation {
+    flex: 1 1 auto;
+    height: 250px;
+    width: 900px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    padding: 5px;
+    font-size: 45px;
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    padding: 5px;
 }
 
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    padding: 5px;
+    font-size: 22px;
 }
 
 
+skills-icons:hover {
+    scale: 1.3;
+}
 
 
-
-
-
-/* ANIMAÇÕES
-
-/* ANIMAÇÃO DO TEXTO DA ABA PROJETOS 
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        @keyframes blink {
-            50% { border-color: transparent; }
-        }
-
-        .text {
-        color: white;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        font-size: 50px;
-        overflow: hidden;
-        white-space: nowrap;
-        margin: 0 auto;
-        border-right: 2px solid white;
-        animation: typing 5s steps(4, end), blink 0.5s step-end infinite;
-        }
+.tech-icons img {
+    margin: 5px;
+}

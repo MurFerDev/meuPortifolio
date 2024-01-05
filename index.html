@@ -10,90 +10,100 @@
 
 <body>
     <header>
-        <div class="navbar">
-            <div class="navbar-logo">
-                <!-- Inserir Logo / top-left -->
-                <img src="images/logo.png" alt="Logo MurFer" id="logo"  width="100px">
+        <section>
+            <div class="logo"> <!-- Logo -->
+                <img src="images/logo.png" alt="Logo MurFer" id="logo">
             </div> <!-- Fim logo -->
-
-            <nav class="navbar-menu">
-                <!-- Menu de topo / Align: center / Elementos distribuídos -->
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about-me">Sobre</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                </ul>
-            </nav> <!-- Fim menu_desktop -->
-        </div>
+        </section>
+        
+        <section>
+            <div class="navbar">
+                <nav>
+                    <a href="#home">Início</a>
+                    <a href="#about-me">Sobre</a>
+                    <a href="#my-skills">Habilidades</a>
+                    <a href="#my-projects">Projetos</a>
+                </nav>
+            </div>
+        </section>
     </header>
 
     <main>
-        <div class="top">
-            <div class="about">
-            <h1 id="about-me">MURILO FERREIRA</h1>
-            <article>
-                <h2>Desenvolvedor Front-End</h2>
-                <p>Sou desenvolvedor <b>Front-End</b> com habilidades em <b>HTML, CSS</b> e <b>JavaScript</b>. Um apaixonado por tecnologia e inovação sempre em busca de novos conhecimentos, desafios e aprendizados constante.<br>
-                Atualmente estudando as linguagens React e Python, afim de aprimorar e desenvolver novas habilidades em desenvolvimento web, aliando minha formação técnica a cursos livres e certificações.</p>
-            </article>
-            </div>
-
-            <div class="formation">
-                <article>
-                    <h3>Técnico em Informática</h3>
-                    <p>Formação em andamento pelo Senac Salto/SP onde estou aprimorando e abtendo novas habilidades, técnicas e coneitos de informática</p>
-                    <h3>Técnico em Computação Gráfica</h3>
-                    <p>Formado pelo Senac Santo André/SP onde desenvolvi uma gama de habilidades técnicas e capacitação em captação, edição e tratamento de imagem, áudio e vídeo. Produção e pós-produção de conteúdo digital. Desenho vetorial e pintura digital. Modelagem e animação 2D e 3D, desgin de produto entre outras.</p>
-                </article>
-            </div>
+        <div class="container">
+            <section>
+                <div class="about">
+                    <h1 id="about-me">MURILO FERREIRA</h1>
+                    <h2>Desenvolvedor Front-End</h2>
+                    <p>Sou um <b>Desenvolvedor Front-End</b>, com habilidades em <b>HTML, CSS</b> e <b>JavaScript</b>. Sou um apaixonado por tecnologia, inovação e conhecimento que está sempre em busca de novos,desafios que me permitam aprendizado constante, desenvolvimento pessoal e profissional.</p>
+                    <p>Atualmente me aprofundando na linguagem JavaScript por meio das <b>bibliotecas React e Babel</b> e dos <b>frameworks Bootstrap e Vue</b>, afim de aprimorar e desenvolver novas habilidades em desenvolvimento web, aliando minha formação técnica a cursos livres e certificações.</p>
+                </div>
+            </section>
+            
+            <section>
+                <div class="profile-img">
+                    <img src="images/foto_perfil.jpg" alt="Murilo Ferreira / MurFer" height="300">
+                </div>
+            </section>
         </div>
 
-        <div class="middle">
-            <article>
-                <h2 id="skills">Habilidades</h2>
-                <div class="strongs">
-                    <img src="images/html5.svg" alt="HTML" height=50px>
+        <div class="container">
+            <section>
+                <div class="formation">
+                    <h3>Formação Técnica</h3>
+                    <p>Em formação como Técnico em Informática pelo Senac, na qual estou me aprimorando e obtendo novas habilidades técnicas e conceitos necessários à minha carreira como desenvolvedor.</p>
+                    <p>Formado em Computação Gráfica pelo Senac, onde desenvolvi uma ampla gama de habilidades técnicas, entre elas: captação, edição e tratamento de imagem, áudio e vídeo, produção e pós-produção de conteúdo digital, desenho vetorial e pintura digital, design de produto, modelagem e animação 2D e 3D.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="skills">
+                <h2 id="my-skills">Habilidades</h2>
+                <h3>Desenvolvidas</h3>
+                <div class="tech-icons">
+                    <img src="images/html5.svg" alt="HTML" height=45vh>
                     <!-- <p>HTML</p> -->
-                    <img src="images/css3.svg" alt="CSS" height=50px>
+                    <img src="images/css3.svg" alt="CSS" height=50vh>
                     <!-- <p>CSS</p> -->
-                    <img src="images/git.svg" alt="Git" height=50px>
-                    <!-- <p>Adobe CC</p> -->
-                    <img src="images/adobe-cc.svg" alt="Adobe CC" height=50px>
-                    <!-- <p>Adobe CC</p> -->
-                </div>
-
-                <div class="studying">
-                    <h3>Cursando</h3> <!-- inserir hover com scale -->
-                    <img src="images/javascript.svg" alt="JavaScript" height=40px>
+                    <img src="images/javascript.svg" alt="JavaScript" height=42vh>
                     <!-- <p>JavaScript</p> -->
-                    <img src="images/reactjs.svg" alt="ReactJS" height=40px>
-                    <!-- <p>ReactJS</p> -->
-                    <img src="images/python.svg" alt="Python" height=40px>
-                    <!-- <p>Python</p> -->
+                    <img src="images/git.svg" alt="Git" height=45vh>
+                    <!-- <p>Git</p> -->
+                    <img src="images/adobe-cc.svg" alt="Adobe CC" height=50vh>
+                    <!-- <p>Adobe CC</p> -->
                 </div>
-            </article>
 
-            <article> <!-- Projetos alinhados em 2 colunas / Ajustar proporção da imagem -->
-                <div class="project-box">
-                    <h2 id="projects">Meus Projetos</h2>
-                    <hr> <!-- animação "EM BREVE ..." / pontos carregando em loop -->
-                    <div class="text">EM BREVE ...</div>
-                    <!-- <img src="project-soon.png">Em Breve</a>
-                    <hr>
-                    <img src="project-soon.png">Em Breve</a>
-                    <hr>
-                    <img src="project-soon.png">Em Breve</a> -->
+                <h3>Estudando</h3>
+                <div class="tech-icons">
+                    <!-- inserir hover com scale -->
+
+                    <img src="images/reactjs.svg" alt="ReactJS" height=40vh>
+                    <!-- <p>ReactJS</p> -->
+                    <img src="images/babel.svg" alt="Babel" height=40vh>
+                    <!-- <p>Babel</p> -->
+                    <img src="images/bootstrap.svg" alt="Bootstrap" height=40vh>
+                    <!-- <p>Bootstrap</p> -->
+                    <img src="images/vue.svg" alt="Vue" height=40vh>
+                    <!-- <p>Vue</p> -->
                 </div>
-            </article>
+            </section>
+
+            <section class="projects"> <!-- Projetos alinhados em 2 colunas / Ajustar proporção da imagem -->
+                <div>
+                    <h2 id="my-projects">Meus Projetos</h2>
+                    <img src="project-soon.png">Em Breve</a>
+                    <img src="project-soon.png">Em Breve</a>
+                    <img src="project-soon.png">Em Breve</a>
+                </div>
+            </section>
         </div>
     </main>
 
     <footer>
-        <div>
+        <div class="back-home-icon">
             <!-- Inserir botão de voltar para o topo -->
             <a href="#logo"><img src="images/back-home.svg" alt="Voltar ao início"
-            id="back-home" width=30px></a>
+            id="back-home" width=60></a>
         </div>
     </footer>
 </body>
