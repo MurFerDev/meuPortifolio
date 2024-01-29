@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MurFer Portifolio</title>
+    <link rel="MurFer icon" type="image/x-icon" href="/images/logo-icon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -19,34 +24,52 @@
         <section>
             <div class="navbar">
                 <nav>
-                    <a href="#home">Início</a>
-                    <a href="#about-me">Sobre</a>
-                    <a href="#my-skills">Habilidades</a>
-                    <a href="#my-projects">Projetos</a>
+                    <ul class="navbar__menu">
+                        <li><a href="#about-me">Sobre</a></li>
+                        <li><a href="#my-formation">Formação</a></li>
+                        <li><a href="#my-skills">Habilidades</a></li>
+                        <li><a href="#my-projects">Projetos</a></li>
+                        <li><a href="#contact-me">Contato</a></li>
+                    </ul>
                 </nav>
             </div>
         </section>
     </header>
 
-    <main>
-        <div class="container">
+    <main class="container">
+        <div class="container__content">
             <section>
                 <div class="about">
-                    <h1 id="about-me">MURILO FERREIRA</h1>
-                    <h2>Desenvolvedor Front-End</h2>
-                    <p>Sou um <b>Desenvolvedor Front-End</b>, com habilidades em <b>HTML, CSS</b> e <b>JavaScript</b>. Sou um apaixonado por tecnologia, inovação e conhecimento que está sempre em busca de novos,desafios que me permitam aprendizado constante, desenvolvimento pessoal e profissional.</p>
-                    <p>Atualmente me aprofundando na linguagem JavaScript por meio das <b>bibliotecas React e Babel</b> e dos <b>frameworks Bootstrap e Vue</b>, afim de aprimorar e desenvolver novas habilidades em desenvolvimento web, aliando minha formação técnica a cursos livres e certificações.</p>
+                    <section>
+                        <div class="about__title">
+                            <h1 id="about-me">MURILO FERREIRA</h1>
+                            <h2>Desenvolvedor Web Front-End</h2>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="about__bio">
+                            <p>Sou um <b>Desenvolvedor Front-End</b>, com habilidades em <b>HTML, CSS</b> e <b>JavaScript</b>. Sou um apaixonado por tecnologia, inovação e conhecimento que está sempre em busca de novos,desafios que me permitam aprendizado constante, desenvolvimento pessoal e profissional.<br>
+                            <p>Atualmente me aprofundando na linguagem JavaScript por meio das <b>bibliotecas React e Babel</b> e dos <b>frameworks Bootstrap e Vue</b>, afim de aprimorar e desenvolver novas habilidades em desenvolvimento web, aliando minha formação técnica a cursos livres e certificações.</p>
+                        </div>
+                    </section>
+
+                    <!-- <section>
+                        <div class="profile-img">
+                            <img src="images/murilo-prof-pic.jpg" alt="Murilo Ferreira / MurFer" height="300">
+                        </div>
+                    </section> -->
                 </div>
+                
+
+                <!-- <div class="profile-img">
+                    <img src="images/murilo-prof-pic.jpg" alt="Murilo Ferreira / MurFer" height="300">
+                </div> -->
             </section>
             
-            <section>
-                <div class="profile-img">
-                    <img src="images/foto_perfil.jpg" alt="Murilo Ferreira / MurFer" height="300">
-                </div>
-            </section>
+
         </div>
 
-        <div class="container">
+        <div class="container__content">
             <section>
                 <div class="formation">
                     <h3>Formação Técnica</h3>
@@ -56,7 +79,7 @@
             </section>
         </div>
 
-        <div class="container">
+        <div class="container__content">
             <section class="skills">
                 <h2 id="my-skills">Habilidades</h2>
                 <h3>Desenvolvidas</h3>

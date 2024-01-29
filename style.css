@@ -1,97 +1,168 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px; color: #0D0D0D;
  }
 
 body {
     background-color: #0D0D0D;
+    min-width: 600;
+    max-width: 1024;
+    margin: 0;
 }
 
 header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    width: 100vw;
-}
-
-.logo img {
-    flex: 1 1 auto;
+    width: auto;
     height: 80px;
-    border-radius: 50%;
-    justify-content: left;
-    order: 1;
-    display: inline-block;
-}
-
-.navbar {
-    flex: 1 1 auto;
-    width: 100vw;
-    justify-items: flex-start;
+    align-items: center;
     align-content: center;
-    background-color: #D9D9D9;
-    text-align: center;
-    text-decoration: none;
-    order: 2;
+    justify-content: center;
 }
 
-.navbar a {
-    margin-left: 3vw;
-    margin-right: 3vw;
+header .logo img {
+    display: flex;
+    height: 60px;
+    justify-content: left;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+header .navbar ul {
+    display: flex;
+    justify-content: right;
+    margin-right: 25px;
+}
+
+header .navbar ul li {
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+header .navbar ul li a {
+    display: flex;    
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    background-color:rgba(0, 0, 0, .3);
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 15px 5px;
+}
+
+header .navbar ul li a:hover {
+    scale: 1.3;
+    background-color:rgba(255, 255, 255, 0.2);
+    border: 1px solid #3b3b3b;
+}
+
+/*
+.nav-bar {
+    background-image: url('ProjetoCSS-inicio/imagens/bg-3.jpg');
+    background-size: cover;
+    background-position: right center;
+}
+*/
 
 main {
-    background-color: #0D0D0D;
-    width: auto;
-    margin: auto;
+    height: fit-content;
+    margin: 0;
 }
 
-.container {
+.container__content {
     display: flex;
     flex-direction:row ;
-    flex-wrap: nowrap;
-    justify-content:center;
+    flex-wrap: wrap;
+    justify-content: center;
     align-content:center;
-    align-items: center;
-    height: 400px;
-    width: 80%;
+    height: 600px;
     background-color: #D9D9D9;
+    margin: 0px 50px;
 }
 
 .about {
-    flex: 1 1 auto;
-    height: 400px;
-    width: 600px;
-    background-color: #D9D9D9;
-    border: none;
+    height: 550px;
+    width: auto;
+    background-color: #eee;
+    border: 1px solid #3b3b3b;
+    border-radius: 25px;
+    box-shadow: 0px 2px 5px #3b3b3b;
 }
 
-.profile-pic {
-    flex: 1 1 auto;
-    height: 300px;
-    padding: 10px;
-    margin: 10px;
-    border: none;
+.about__title h1 {
+    font-size: 45px;
+    width: 900;
+    min-width: auto;
+    max-width: 800px;
+    padding: 10px 10px 10px 10px;
+    margin: 15px 15px 0px 15px;
+    border-radius: 15px 15px 0 0;
+    background-color: #d9d9d9;
+}
+
+.about__title h2 {
+    font-size: 30px;
+    width: 400;
+    padding: 10px 10px 10px 10px;
+    margin: 0 15px 15px 15px;
+    border-radius: 0 0 15px 15px;
+    background-color: #d9d9d9;
+}
+
+.about__bio {
+    font-size: 20px;
+    min-width: auto;
+    max-width: 800px;
+    padding: 10px 10px 5px 10px;
+    margin: 10px 15px 30px 15px;
+    border-radius: 15px;
+    background-color: #d9d9d9;
+}
+
+.profile-img {
+    display: flex;
+}
+
+.profile-img img {
+    position: absolute;
 }
 
 .formation {
-    flex: 1 1 auto;
-    height: 250px;
-    width: 900px;
-    padding: 10px;
-    margin: 10px;
-    background-color: #D9D9D9;
-    border: none;
+    height: 350px;
+    width: auto;
+    background-color: #eee;
+    border: 1px solid #3b3b3b;
+    border-radius: 25px;
+    box-shadow: 0px 2px 5px #3b3b3b;
 }
 
-h1 {
-    font-size: 45px;
+
+
+.skills {
+    height: 550px;
+    width: auto;
+    background-color: #eee;
+    border: 1px solid #3b3b3b;
+    border-radius: 25px;
+    box-shadow: 0px 2px 5px #3b3b3b;
 }
 
-h2 {
-    font-size: 30px;
-}
 
+
+
+.projects {
+    height: 550px;
+    width: auto;
+    background-color: #eee;
+    border: 1px solid #3b3b3b;
+    border-radius: 25px;
+    box-shadow: 0px 2px 5px #3b3b3b;
+}
+/*
 h3 {
     font-size: 22px;
 }
