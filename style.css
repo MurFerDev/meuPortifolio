@@ -1,10 +1,10 @@
 * {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px; color: #0D0D0D;
+    font-size: 20px;
+    color: #0D0D0D;
  }
 
 body {
-    background-color: #0D0D0D;
     min-width: 600;
     max-width: 1024;
     margin: 0;
@@ -17,6 +17,7 @@ header {
     align-items: center;
     align-content: center;
     justify-content: center;
+    background-color: #0D0D0D;
 }
 
 header .logo img {
@@ -68,25 +69,31 @@ header .navbar ul li a:hover {
 }
 */
 
+/* ======================================================== */
+
 main {
-    height: fit-content;
     margin: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #eee;
 }
 
-.container__content {
+.container-about ul {
     display: flex;
-    flex-direction:row ;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content:center;
-    height: 600px;
-    background-color: #D9D9D9;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style-type: none;
+    width: 1024px;
+    height: 500px;
+    background-color: #fff;
     margin: 0px 50px;
 }
 
-.about {
-    height: 550px;
-    width: auto;
+.about__content li {
+    width: 1024px;
+    height: max-content;
+    margin: 25px;
     background-color: #eee;
     border: 1px solid #3b3b3b;
     border-radius: 25px;
@@ -95,45 +102,50 @@ main {
 
 .about__title h1 {
     font-size: 45px;
-    width: 900;
-    min-width: auto;
-    max-width: 800px;
-    padding: 10px 10px 10px 10px;
-    margin: 15px 15px 0px 15px;
+    width: 400;
+    padding: 15px;
+    margin: 15px 15px 0 15px;
     border-radius: 15px 15px 0 0;
     background-color: #d9d9d9;
 }
 
-.about__title h2 {
+.about__subtitle h2 {
     font-size: 30px;
     width: 400;
-    padding: 10px 10px 10px 10px;
-    margin: 0 15px 15px 15px;
+    padding: 0 15px 15px 15px;
+    margin: 0px 15px 15px 15px;
     border-radius: 0 0 15px 15px;
     background-color: #d9d9d9;
 }
 
-.about__bio {
+.about__bio p {
     font-size: 20px;
-    min-width: auto;
-    max-width: 800px;
-    padding: 10px 10px 5px 10px;
-    margin: 10px 15px 30px 15px;
+    width: 600px;
+    padding: 15px;
+    margin: 0px 15px 15px 15px;
     border-radius: 15px;
     background-color: #d9d9d9;
 }
 
-.profile-img {
-    display: flex;
+.about__image img {
+    display: inline;
+    margin: 25px 25px 25px 20px;
 }
 
-.profile-img img {
-    position: absolute;
+/* ======================================================== */
+
+.container-formation {
+    list-style-type: none;
+    width: 1024px;
+    height: 500px;
+    background-color: #fff;
+    margin: 100px 50px;
 }
 
-.formation {
-    height: 350px;
-    width: auto;
+.formation__content {
+    width: 1024px;
+    height: max-content;
+    margin: 25px;
     background-color: #eee;
     border: 1px solid #3b3b3b;
     border-radius: 25px;
@@ -141,10 +153,28 @@ main {
 }
 
 
+.formation__title h3 {
+    font-size: 25px;
+    width: 400;
+}
+
+.formation__bio p {
+    font-size: 20px;
+    width: 600px;
+    padding: 15px;
+    margin: 0px 15px 15px 15px;
+    border-radius: 15px;
+    background-color: #d9d9d9;
+}
+
+/* ======================================================== */
 
 .skills {
-    height: 550px;
-    width: auto;
+    flex-wrap: wrap;
+    flex-direction: row ;
+    height: 350px;
+    min-width: 500px;
+    max-width: 1024px;
     background-color: #eee;
     border: 1px solid #3b3b3b;
     border-radius: 25px;
@@ -152,27 +182,16 @@ main {
 }
 
 
-
+/* ======================================================== */
 
 .projects {
-    height: 550px;
-    width: auto;
+    flex-wrap: wrap;
+    flex-direction: row ;
+    height: 350px;
+    min-width: 500px;
+    max-width: 1024px;
     background-color: #eee;
     border: 1px solid #3b3b3b;
     border-radius: 25px;
     box-shadow: 0px 2px 5px #3b3b3b;
-}
-/*
-h3 {
-    font-size: 22px;
-}
-
-
-skills-icons:hover {
-    scale: 1.3;
-}
-
-
-.tech-icons img {
-    margin: 5px;
 }
