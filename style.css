@@ -1,6 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-weight: 1rem;
     color: #0D0D0D;
  }
 
@@ -61,22 +61,20 @@ header .navbar ul li a:hover {
     border: 1px solid #3b3b3b;
 }
 
-/*
-.nav-bar {
-    background-image: url('ProjetoCSS-inicio/imagens/bg-3.jpg');
-    background-size: cover;
-    background-position: right center;
-}
-*/
 
 /* ======================================================== */
 
 main {
-    margin: 0;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
     background-color: #eee;
+}
+
+.container-about {
+    background-color: #fff;
+    width: fit-content;
+    border: 1px solid #3b3b3b;
+    border-radius: 15px;
+    width: 1024px;
+    box-shadow: 0px 2px 5px #3b3b3b;
 }
 
 .container-about ul {
@@ -84,52 +82,68 @@ main {
     flex-wrap: nowrap;
     flex-direction: row;
     list-style-type: none;
-    width: 1024px;
-    height: 500px;
-    background-color: #fff;
-    margin: 0px 50px;
 }
 
 .about__content li {
-    width: 1024px;
-    height: max-content;
-    margin: 25px;
-    background-color: #eee;
-    border: 1px solid #3b3b3b;
-    border-radius: 25px;
-    box-shadow: 0px 2px 5px #3b3b3b;
 }
 
 .about__title h1 {
-    font-size: 45px;
-    width: 400;
-    padding: 15px;
-    margin: 15px 15px 0 15px;
-    border-radius: 15px 15px 0 0;
     background-color: #d9d9d9;
+    font-size: 3rem;
+    padding: 15px;
+    padding: 15px 15px 0 15px;
+    border-radius: 15px 15px 0 0;
+    margin: 25px 25px 0 25px;
 }
 
 .about__subtitle h2 {
-    font-size: 30px;
-    width: 400;
-    padding: 0 15px 15px 15px;
-    margin: 0px 15px 15px 15px;
-    border-radius: 0 0 15px 15px;
     background-color: #d9d9d9;
+    font-size: 1.75rem;
+    padding: 10px 15px 10px 15px;
+    border-radius: 0 0 15px 15px;
+    margin: 0px 25px 25px 25px;
 }
 
-.about__bio p {
-    font-size: 20px;
-    width: 600px;
-    padding: 15px;
-    margin: 0px 15px 15px 15px;
-    border-radius: 15px;
+.about__bio {
     background-color: #d9d9d9;
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 0px 25px 25px 25px;
+}
+
+.about__image {
+    width: fit-content;
 }
 
 .about__image img {
+    /* position: relative; */
+    width: 100%;
+    border-radius: 5%;
+    margin: 15px 0 15px 0px;
+}
+
+.about__social-buttons {
+    flex-wrap: nowrap;
+    flex-direction: row;
     display: inline;
-    margin: 25px 25px 25px 20px;
+    width: fit-content;
+    /* align-items: center;
+    align-content: center; */
+    justify-content: space-between;
+}
+
+.about__social-buttons li {
+    position: absolute;
+}
+
+.about__social-buttons img {
+    height: 50px;
+    overflow: hidden;
+}
+
+.about__social-buttons img:hover {
+    scale: 1.1;
 }
 
 /* ======================================================== */
@@ -154,12 +168,12 @@ main {
 
 
 .formation__title h3 {
-    font-size: 25px;
+    font-size: 1.5rem;
     width: 400;
 }
 
 .formation__bio p {
-    font-size: 20px;
+    font-size: 1.1rem;
     width: 600px;
     padding: 15px;
     margin: 0px 15px 15px 15px;
