@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <section>
             <div class="logo">
                 <img src="images/logo.png" alt="Logo MurFer" id="logo">
@@ -23,7 +23,6 @@
         
         <section>
             <div class="navbar">
-                <!-- MENU DE NAVEGAÇÃO DO TOPO -->
                 <nav>
                     <ul class="navbar__menu">
                         <li><a href="#about-me">Sobre</a></li>
@@ -35,13 +34,33 @@
                 </nav>
             </div>
         </section>
-    </header>
+    </header> -->
 
     <main>
-        <div class="container-about">    
+        <section class="Container-about">
+            <div class="about__grid">
+                <div class="about__title">
+                    <h1>MURILO FERREIRA</h1><hr>
+                    <h2>Desenvolvedor Front-End</h2>
+                </div>
+                <!-- <div class="gridItem2">
+                    <h2>Desenvolvedor Front-End</h2>
+                </div> -->
+                <div class="about__text">
+                    <p>Sou um <b>Desenvolvedor Front-End</b>, com habilidades em <b>HTML, CSS</b> e <b>JavaScript</b>. Sou um apaixonado por tecnologia, inovação e conhecimento que está sempre em busca de novos,desafios que me permitam aprendizado constante, desenvolvimento pessoal e profissional.<br>
+                    <p>Atualmente me aprofundando na linguagem JavaScript por meio das <b>bibliotecas React e Babel</b> e dos <b>frameworks Bootstrap e Vue</b>, afim de aprimorar e desenvolver novas habilidades em desenvolvimento web, aliando minha formação técnica a cursos livres e certificações.</p>
+                </div>
+                <div class="profile-image" >
+                    <img src="images/murilo-prof-pic.jpg" alt="Murilo Ferreira / MurFer"> 
+                </div>
+                <div class="gridItem5">Icone1</div>
+                <div class="gridItem6">Icone2</div>
+            </div>
+        </section>
+
+        <!-- <div class="container-about">    
             <div class="about__content">
-                <!-- CONTEÚDO DE APRESENTAÇÃO -->
-                <section>
+                <div class="about__content-text">
                     <div class="about__title">
                         <h1 id="about-me">MURILO FERREIRA</h1>
                     </div>
@@ -51,32 +70,29 @@
                     </div>
 
                     <div class="about__bio" >
-                        <!-- TEXTO DE APRESENTAÇÃO -->
                         <p>Sou um <b>Desenvolvedor Front-End</b>, com habilidades em <b>HTML, CSS</b> e <b>JavaScript</b>. Sou um apaixonado por tecnologia, inovação e conhecimento que está sempre em busca de novos,desafios que me permitam aprendizado constante, desenvolvimento pessoal e profissional.<br>
                         <p>Atualmente me aprofundando na linguagem JavaScript por meio das <b>bibliotecas React e Babel</b> e dos <b>frameworks Bootstrap e Vue</b>, afim de aprimorar e desenvolver novas habilidades em desenvolvimento web, aliando minha formação técnica a cursos livres e certificações.</p>
                     </div>
-                </section>
+                </div>
 
-                <section>
-                    <!-- IMAGEM/FOTO DE PERFIL -->
-                    <div class="about__image">
-                        <img src="images/murilo-prof-pic.jpg" alt="Murilo Ferreira / MurFer">
+                <div class="about__content-image">
+                    <div class="about__profile-image">
+                        <img class="profile-image" src="images/murilo-prof-pic.jpg" alt="Murilo Ferreira / MurFer">
                     </div>
     
-                    <!-- LINKS DAS REDES SOCIAIS -->
-                    <div class="about__social-buttons">
-                        <a href="https://github.com/MurFerDev" target="_blank">
+                    <div class="about__social-links">
+                        <a class="social-link1" href="https://github.com/MurFerDev" target="_blank">
                             <img src="images/github.svg" alt="Acessar Github" title="Github">
                         </a>
-                        <a href="https://www.linkedin.com/in/murilo-f-86411b242/" target="_blank">
+                        <a class="social-link2" href="https://www.linkedin.com/in/murilo-f-86411b242/" target="_blank">
                             <img src="images/linkedin-outline.png" alt="Acessar linkedIn" title="LinkedIn">
                         </a>
                     </div>
-                </section>
+                </div>
             </div>            
-        </div>
+        </div> -->
 
-        <div class="container-formation">
+        <!-- <div class="container-formation">
             <div class="formation__title">
                 <h3>Formação Técnica</h3>
             </div>
@@ -96,34 +112,24 @@
                 <h2 id="my-skills">Habilidades</h2>
                 <h3>Desenvolvidas</h3>
                 <div class="tech-icons">
-                    <img src="images/html5.svg" alt="HTML" height=45vh> -->
-                    <!-- <p>HTML</p> -->
+                    <img src="images/html5.svg" alt="HTML" height=45vh>
                     <img src="images/css3.svg" alt="CSS" height=50vh>
-                    <!-- <p>CSS</p> -->
                     <img src="images/javascript.svg" alt="JavaScript" height=42vh>
-                    <!-- <p>JavaScript</p> -->
                     <img src="images/git.svg" alt="Git" height=45vh>
-                    <!-- <p>Git</p> -->
                     <img src="images/adobe-cc.svg" alt="Adobe CC" height=50vh>
-                    <!-- <p>Adobe CC</p> -->
                 </div>
 
                 <h3>Estudando</h3>
                 <div class="tech-icons">
-                    <!-- inserir hover com scale -->
 
                     <img src="images/reactjs.svg" alt="ReactJS" height=40vh>
-                    <!-- <p>ReactJS</p> -->
                     <img src="images/babel.svg" alt="Babel" height=40vh>
-                    <!-- <p>Babel</p> -->
                     <img src="images/bootstrap.svg" alt="Bootstrap" height=40vh>
-                    <!-- <p>Bootstrap</p> -->
                     <img src="images/vue.svg" alt="Vue" height=40vh>
-                    <!-- <p>Vue</p> -->
                 </div>
             </section>
 
-            <section class="projects"> <!-- Projetos alinhados em 2 colunas / Ajustar proporção da imagem -->
+            <section class="projects">
                 <div>
                     <h2 id="my-projects">Meus Projetos</h2>
                     <img src="project-soon.png">Em Breve</a>
@@ -136,10 +142,9 @@
 
     <footer>
         <div class="back-home-icon">
-            <!-- Inserir botão de voltar para o topo -->
             <a href="#logo"><img src="images/back-home.svg" alt="Voltar ao início"
             id="back-home" width=60></a>
         </div>
     </footer>
 </body>
-</html>
+</html> -->
